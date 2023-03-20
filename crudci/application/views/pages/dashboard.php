@@ -100,7 +100,7 @@
           </tr>
         </thead>
         <tbody>
-          <?php foreach ($games as $game): ?>
+          <?php foreach ($games as $game => $value): ?>
             <tr>
               <td>
                 <?= $game['id'] ?>
@@ -120,6 +120,7 @@
               <td>zzz</td>
             </tr>
           <?php endforeach; ?>
+
         </tbody>
       </table>
     </div>

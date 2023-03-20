@@ -5,9 +5,9 @@ class Dashboard extends CI_Controller
 {
 	public function index()
 	{
-		$this->load->model("gamesModel");
-		$data["games"] = $this->gamesModel->index();
+		$this->load->model("games_model");
+		$data["games"] = $this->games_model->index();
 		$data["title"] = "Dashboard - CodeIgniter";
-		$this->load->view('pages/dashboard');
+		$this->load->view('pages/dashboard', $data);
 	}
 }
